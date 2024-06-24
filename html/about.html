@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon_io/favicon-16x16.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/about.css">
+    <title>در باره ما</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../img/logo.png" alt="logo">
+            </a>
+        </div>
+            
+        <span class="them-btn">
+            <span class="fa-solid fa-circle-half-stroke"></span>
+        </span>
+
+        <nav class="navbar">
+            <a href="../index.html">خانه</a>
+            <a href="#">محصولات</a>
+            <a href="about.html">درباره ما</a>
+            <a href="contactus.html">تماس با ما</a>
+        </nav>
+
+        <div class="icons">
+            <i class="fa-solid fa-magnifying-glass" data-icon="search"></i>
+            <i class="fas fa-cart-shopping" data-icon="shopping-cart"><span id="cart-count">0</span></i>
+            <i class="fa-solid fa-bars" id="menu-btn" data-icon="menu"></i>     
+    
+            <div class="search-box">
+                <input type="search"  id="search" placeholder="جستجو ...">
+                <label for="search" class="fa-solid fa-magnifying-glass"></label>
+            </div>
+        </div>
+        
+        <div class="cart-container">
+            <h3>سبد خرید</h3>
+            <div class="cart-list">
+                    <template>
+                        <div class="cart-item">
+                            <div class="cart-img">
+                                <img src="img/cup-coffee-8.jpg" alt="coffee">
+                            </div>
+                            <div class="cart-item-content">
+                                <h3>قهوه ترک</h3>
+                                <span class="price"><strong>80,000</strong>  تومان</span>
+                            </div>
+                            <div class="quantity">
+                                <span class="plus">+</span>
+                                <span style="padding: 0 2px; color: #d6a600;">95</span>
+                                <span class="minus">-</span>
+                            </div>
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </template>
+            </div>
+
+            <div style="display: grid;">
+                <div class="price-content">
+                    <span>جمع کل</span>                                       
+                    <span><span id="total">0</span> تومان</span>
+                </div>
+                <button class="cart-buy" type="submit">خرید</button>
+            </div>
+        </div>
+    </header>
+
+    <!---------- main section ----------->
+    <div class="container">
+        <div class="image">
+            <img src="../img/ezgif.com-webp-to-jpg-converted-2-1024x684.jpg" alt="">
+        </div>
+
+        <article class="content">
+            <p>
+                مجموعه کافی شاپ به عنوان یک مجموعه، با هدف گسترش و اعتلای فرهنگ مصرف قهوه و براورده سازی نیاز موجود در بازار برای تامین کالای با کیفیت اقدام به تولید محصولات متنوعی در زمینه قهوه به عنوان یک نوشیدنی گرم نموده است.<br>
+
+                ما در تلاش هستیم که علاوه برتولید و ارائه بهترین محصول به بازار، برای آموزش مخاطبین خود با برگزاری دوره های آموزشی ویژه، گامی موثر در جهت اعتلای فرهنگ مصرف قهوه برداریم.<br>
+
+                درراستای جلب رضایت مصرف کننده، بهترین نمونه ها از بهترین مزارع قهوه در سراسر دنیا جمع آوری گردیده و در لابراتواری کامل و پیشرفته، کلیه فرایندهای لازم جهت بررسی محصولات جدید، بر اساس سلیقه و نظر مخاطب با حضور کارشناسان خبره و ورزیده در این زمینه مورد بررسی قرار میگیرد.<br>
+                
+                محصولات کافی شاپ دارای تمایزهای خاص می باشند که دربین رقبای داخلی بدان پرداخته نشده است. <br>
+                میزان تنوع محصول چه از حیث نوع محصول و نحوه استفاده و چه توجه به محدودیت ‌های ادوات دم آوری از مزایای برند کافی شاپ برشمرده می‌شود. کافی شاپ کلیه محصولات اعم از دانه قهوه، سابه قهوه، کپسول قهوه، دریپ بگ و قهوه فوری را بر اساس جدیدترین دستگاهها و فرایندهای تولید، اماده و به بازار عرضه می نماید.
+            </p><br><br>
+            <address>آدرس: استان آذربایجان شرقی، تبریز، شریعتی</address>
+            <p>ایمیل: info@coffee_shop.com</p>
+        </article>
+    
+    </div>
+
+    
+    <!---------------- Footer ------------------>
+    <footer class="footer">
+        <div class="social-link">
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+        </div>
+
+        <div class="copy-right">
+            <p>Created by <span class="author">Amin Kushesh Vatan</span> | All Rights Reserved</span></p>
+        </div>
+    </footer>
+
+    
+    <script src="../js/app.js"></script>
+</body>
+</html>

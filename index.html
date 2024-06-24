@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Coffee Shop</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/logo.png" alt="logo">
+            </a>
+        </div>
+    
+        <span class="them-btn">
+            <span class="fa-solid fa-circle-half-stroke"></span>
+        </span>
+    
+        <nav class="navbar">
+            <a href="index.html">خانه</a>
+            <a href="#">محصولات</a>
+            <a href="html/about.html">درباره ما</a>
+            <a href="html/contactus.html">تماس با ما</a>
+        </nav>
+
+        <div class="icons">
+            <i class="fa-solid fa-magnifying-glass" data-icon="search"></i>
+            <i class="fas fa-cart-shopping" data-icon="shopping-cart"><span id="cart-count">0</span></i>
+            <i class="fa-solid fa-bars" id="menu-btn" data-icon="menu"></i>     
+    
+            <div class="search-box">
+                <input type="search"  id="search" placeholder="جستجو ...">
+                <label for="search" class="fa-solid fa-magnifying-glass"></label>
+            </div>
+        </div>
+        
+        <div class="cart-container">
+            <h3>سبد خرید</h3>
+            <div class="cart-list">
+                    <template>
+                        <div class="cart-item">
+                            <div class="cart-img">
+                                <img src="img/cup-coffee-8.jpg" alt="coffee">
+                            </div>
+                            <div class="cart-item-content">
+                                <h3>قهوه ترک</h3>
+                                <span class="price"><strong>80,000</strong>  تومان</span>
+                            </div>
+                            <div class="quantity">
+                                <span class="plus">+</span>
+                                <span style="padding: 0 2px; color: #d6a600;">95</span>
+                                <span class="minus">-</span>
+                            </div>
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </template>
+            </div>
+
+            <div style="display: grid;">
+                <div class="price-content">
+                    <span>جمع کل</span>                                       
+                    <span><span id="total">0</span> تومان</span>
+                </div>
+                <button class="cart-buy" type="submit">خرید</button>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="home">
+        <div class="content">
+            <h3>کافی شاپ</h3>
+            <p>در کافی شاپ، از بهترین برندهای سراسر جهان استفاده میکنیم تا درک لذت خوردن یک قهوه ی عالی را تجربه کنید
+            </p>
+        </div>
+    </section>
+
+    <!---------- main section ----------->
+    <div class="container">
+
+        <!---------- coffee menu section ----------->
+        <section class="coffee-menu">
+            <p>نوشیدنی</p>
+            <div class="coffee-list">
+                <div class="card-cup">
+                    <div>
+                        <img src="img/cup-coffee-1.jpg" alt="coffee cup">
+                    </div>
+                    <div class="cup-content">
+                        <h4>قهوه اسپرسو</h4>
+                    </div>
+                    <div class="cup-price">
+                        <span>50,000 تومان</span>
+                    </div>
+                    <button class="add-cart">خرید</button>
+                </div>
+
+                <div class="card-cup">
+                    <div>
+                        <img src="img/cup-coffee-2.jpg" alt="coffee cup">
+                    </div>
+                    <div class="cup-content">
+                        <h4>هات چاکلت</h4>
+                    </div>
+                    <div class="cup-price">
+                        <span>60,000 تومان</span>
+                    </div>
+                    <button class="add-cart">خرید</button>
+                </div>
+
+                <div class="card-cup">
+                    <div>
+                        <img src="img/cup-coffee-3.jpg" alt="coffee cup">
+                    </div>
+                    <div class="cup-content">
+                        <h4>قهوه لته</h4>
+                    </div>
+                    <div class="cup-price">
+                        <span>80,000 تومان</span>
+                    </div>
+                    <button class="add-cart">خرید</button>
+                </div>
+
+                <div class="card-cup">
+                    <div>
+                        <img src="img/cup-coffee-4.jpg" alt="coffee cup">
+                    </div>
+                    <div class="cup-content">
+                        <h4>قهوه دابل اسپرسو</h4>
+                    </div>
+                    <div class="cup-price">
+                        <span>75,000 تومان</span>
+                    </div>
+                    <button class="add-cart">خرید</button>
+                </div>
+
+                <div class="card-cup">
+                    <div>
+                        <img src="img/cup-coffee-5.jpg" alt="coffee cup">
+                    </div>
+                    <div class="cup-content">
+                        <h4>قهوه اسپرسو</h4>
+                    </div>
+                    <div class="cup-price">
+                        <span>60,000 تومان</span>
+                    </div>
+                    <button class="add-cart">خرید</button>
+                </div>
+
+                <div class="card-cup">
+                    <div>
+                        <img src="img/cup-coffee-6.jpg" alt="coffee cup">
+                    </div>
+                    <div class="cup-content">
+                        <h4>قهوه ترک</h4>
+                    </div>
+                    <div class="cup-price">
+                        <span>60,000 تومان</span>
+                    </div>
+                    <button class="add-cart">خرید</button>
+                </div>
+
+            </div>
+        </section>
+        
+        <!------------ Products section ------------>
+
+        <section class="products-box">
+            <p>دانه قهوه</p>
+            <div class="product-slider">
+                <div class="product">
+                    <div>
+                        <img src="img/​دانه قهوه ونزکافه - 1000 گرم.png" alt="coffee cup">
+                    </div>
+                    <div class="product-content">
+                        <h4>دانه قهوه ونز​کافه - 1000 گرم</h4>
+                    </div>
+                    <div class="product-price">
+                        <span>380,000 تومان</span>
+                        <div class="star-rate">
+                            <span> 4.5</span>
+                            <span class="fa-solid fa-star star star"></span>
+                        </div>
+                    </div>
+                    <button class="add-cart">خرید</button>       
+                </div>
+                <div class="product">
+                    <div>
+                        <img src="img/دانه قهوه چری روبستا شاران - 1 کیلوگرم.png" alt="coffee cup">
+                    </div>
+                    <div class="product-content">
+                        <h4>دانه قهوه چری روبستا شاران - 1 کیلوگرم</h4>
+                    </div>
+                    <div class="product-price">
+                        <span>600,000 تومان</span>
+                        <div class="star-rate">
+                            <span> 4.5</span>
+                            <span class="fa-solid fa-star star star"></span>
+                        </div>
+                    </div>
+                    <button class="add-cart">خرید</button>       
+                </div>
+                <div class="product">
+                    <div>
+                        <img src="img/دانه قهوه سیپ نوش - 250 گرم.png" alt="coffee cup">
+                    </div>
+                    <div class="product-content">
+                        <h4>دانه قهوه سیپ نوش - 250 گرم</h4>
+                    </div>
+                    <div class="product-price">
+                        <span>185,000 تومان</span>
+                        <div class="star-rate">
+                            <span> 4.5</span>
+                            <span class="fa-solid fa-star star star"></span>
+                        </div>
+                    </div>
+                    <button class="add-cart">خرید</button>       
+                </div>
+                <div class="product">
+                    <div>
+                        <img src="img/دانه قهوه اسپرسو آکوامن ونزکافه - 250 گرم.png" alt="coffee cup">
+                    </div>
+                    <div class="product-content">
+                        <h4>دانه قهوه اسپرسو آکوامن ونزکافه - 250 گرم</h4>
+                    </div>
+                    <div class="product-price">
+                        <span>195,000 تومان</span>
+                        <div class="star-rate">
+                            <span> 4.5</span>
+                            <span class="fa-solid fa-star star star"></span>
+                        </div>
+                    </div>
+                    <button class="add-cart">خرید</button>
+                </div>
+                <div class="product">
+                    <div>
+                        <img src="img/دانه قهوه ترکیبی کارینا شاران -  250 گرم.png" alt="coffee cup">
+                    </div>
+                    <div class="product-content">
+                        <h4>دانه قهوه ترکیبی کارینا شاران -  250 گرم</h4>
+                    </div>
+                    <div class="product-price">
+                        <span>250,000 تومان</span>
+                        <div class="star-rate">
+                            <span> 4.5</span>
+                            <span class="fa-solid fa-star star star"></span>
+                        </div>
+                    </div>
+                    <button class="add-cart">خرید</button>       
+                </div>
+                <div class="product">
+                    <div>
+                        <img src="img/دانه قهوه تام کینز AR50 - مقدار 1000 گرم.png" alt="coffee cup">
+                    </div>
+                    <div class="product-content">
+                        <h4>دانه قهوه تام کینز AR50 - مقدار 1000 گرم</h4>
+                    </div>
+                    <div class="product-price">
+                        <span>600,000 تومان</span>
+                        <div class="star-rate">
+                            <span> 4.5</span>
+                            <span class="fa-solid fa-star star star"></span>
+                        </div>
+                    </div>
+                    <button class="add-cart">خرید</button>       
+                </div>
+                <div class="product">
+                    <div>
+                        <img src="img/دانه قهوه اسپرسو بن مانو آرنيکا - 250 گرم.png" alt="coffee cup">
+                    </div>
+                    <div class="product-content">
+                        <h4>دانه قهوه اسپرسو بن مانو آرنيکا - 250 گرم</h4>
+                    </div>
+                    <div class="product-price">
+                        <span>268,000 تومان</span>
+                        <div class="star-rate">
+                            <span> 4.5</span>
+                            <span class="fa-solid fa-star star star"></span>
+                        </div>
+                    </div>
+                    <button class="add-cart">خرید</button>       
+                </div>
+                <div class="product">
+                    <div>
+                        <img src="img/دانه قهوه اسپرسو آکوامن ونزکافه - 250 گرم.png" alt="coffee cup">
+                    </div>
+                    <div class="product-content">
+                        <h4>دانه قهوه اسپرسو آکوامن ونزکافه - 250 گرم</h4>
+                    </div>
+                    <div class="product-price">
+                        <span>195,000 تومان</span>
+                        <div class="star-rate">
+                            <span> 4.5</span>
+                            <span class="fa-solid fa-star star star"></span>
+                        </div>
+                    </div>
+                    <button class="add-cart">خرید</button>       
+                </div>
+                <div class="product">
+                    <div>
+                        <img src="img/دانه قهوه اسپرسو آکوامن ونزکافه - 250 گرم.png" alt="coffee cup">
+                    </div>
+                    <div class="product-content">
+                        <h4>دانه قهوه اسپرسو آکوامن ونزکافه - 250 گرم</h4>
+                    </div>
+                    <div class="product-price">
+                        <span>195,000 تومان</span>
+                        <div class="star-rate">
+                            <span> 4.5</span>
+                            <span class="fa-solid fa-star star star"></span>
+                        </div>
+                    </div>
+                    <button class="add-cart">خرید</button>
+                </div>
+            </div>
+            <span class="fa-solid fa-angle-right next-btn" data-dir="right"></span>
+            <span class="fa-solid fa-angle-left pre-btn" data-dir="left"></span>
+        </section>
+    </div>
+
+      <!---------------- Footer ------------------>
+    <footer class="footer">
+        <div class="social-link">
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+        </div>
+
+        <div class="copy-right">
+            <p>Created by <span class="author">Amin Kushesh Vatan</span> | All Rights Reserved</span></p>
+        </div>
+    </footer>
+
+    
+    <script src="js/app.js"></script>
+    <script src="js/slider.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+
+body {
+    min-height: 100vh;
+}
+.container {
+    margin-top: 5rem;
+}
+
+.container .main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.main form {
+    flex: 1 0 49%;
+    max-width: 49%;
+}
+.main form div {
+    display: grid;
+    gap: 0.2rem;
+    margin-bottom: 0.5rem;
+}
+.main form input, textarea {
+    padding: 0.3rem .3rem .3rem 0;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    background-color: transparent;
+    outline: none;
+    color: var(--light-dark);
+    font-size: 1.1rem;
+    border: 1px solid var(--light-dark);
+}
+form textarea {
+    height: 8rem;
+    width: 100%;
+    resize: none;
+}
+.main form button {
+    background-color: var(--main-color);
+    font-size: 1.1rem;
+    padding: 0.3rem;
+    border-radius: 5px;
+}
+
+.main .image {
+    flex: 0 1 50%;
+}
+.main .image img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}

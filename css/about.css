@@ -1,0 +1,17 @@
+
+.container .image {
+    width: 100%;
+    margin: 1.3rem auto;
+}
+.container .image img {
+    width: 100%;
+    object-fit: fill;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px var(--main-shadow);;
+}
+
+.container .content {
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+    font-weight: 300;
+}
